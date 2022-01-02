@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header .buttons {
+
+  padding-left: 500px;
+  padding-right: 25px;
+}
+
+.header .buttons i {
+
+  padding-right: 10px;
+  padding-left: 30px;
+
+}

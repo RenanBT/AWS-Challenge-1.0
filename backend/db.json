@@ -1,0 +1,14 @@
+{
+    "devices": [{
+        "id": 1,
+        "name": "Samgung S20",
+        "price": 5000.00
+
+    }, {
+        "id": 2,
+        "name": "Iphone X",
+        "price": 9000.00
+    }
+
+]
+}
