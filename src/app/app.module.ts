@@ -7,23 +7,36 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
 import { FooterComponent } from './components/template/footer/footer.component';
-import {MatButtonModule} from '@angular/material/button'
+import {MatButtonModule} from '@angular/material/button';
+import { CategoryComponent } from './views/category/category.component';
+import { DevicesComponent } from './views/devices/devices.component';
+import { NavComponent } from './components/template/nav/nav.component';
+import { MatSidenavModule} from '@angular/material/sidenav'
+import { MatListModule } from '@angular/material/list';
+import { HomeComponent } from './views/home/home.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CategoryComponent,
+    DevicesComponent,
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
-    
-
+    MatButtonModule,
+    MatCardModule,
+    MatSidenavModule,
+    MatListModule
+  
     
   ],
   providers: [],
