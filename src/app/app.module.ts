@@ -1,3 +1,4 @@
+import { CategoryCreateComponent } from './components/category/category-create/category-create.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -15,7 +16,18 @@ import { DevicesComponent } from './views/devices/devices.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { MatSidenavModule} from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list';
-import { HomeComponent } from './views/home/home.component'
+import { HomeComponent } from './views/home/home.component';
+import { DeviceCreateComponent } from './components/devices/device-create/device-create.component';
+import { MatSnackBarModule} from '@angular/material/snack-bar'
+import { HttpClientModule } from  '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
+
 
 @NgModule({
   declarations: [
@@ -25,7 +37,9 @@ import { HomeComponent } from './views/home/home.component'
     CategoryComponent,
     DevicesComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    DeviceCreateComponent,
+    CategoryCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -35,8 +49,17 @@ import { HomeComponent } from './views/home/home.component'
     MatButtonModule,
     MatCardModule,
     MatSidenavModule,
-    MatListModule
-  
+    MatListModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    ReactiveFormsModule,
+
     
   ],
   providers: [],
